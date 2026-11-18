@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Debjit Roy, Ph.D. — optical engineering, advanced microscopy, laser systems, and scientific instrumentation.">
+  <meta name="theme-color" content="#101923">
+  <title>Debjit Roy, Ph.D. | Optical Engineering & Scientific Instrumentation</title>
+  <style>
+    :root{--bg:#101923;--panel:#172431;--panel2:#1c2b39;--ink:#edf3f6;--muted:#a8b8c4;--line:#304352;--accent:#63d6c4;--accent2:#83aef5;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline} .wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(16,25,35,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(168,184,196,.15)}
+    nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:750;letter-spacing:.02em;color:var(--ink)}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:22px;flex-wrap:wrap;font-size:.9rem}.navlinks a{color:var(--muted)}.navlinks a:hover{color:var(--ink);text-decoration:none}
+    .hero{position:relative;overflow:hidden;padding:112px 0 94px;background:radial-gradient(ellipse at 82% 25%,rgba(99,214,196,.13),transparent 34%),radial-gradient(ellipse at 15% 80%,rgba(131,174,245,.12),transparent 38%)}
+    .eyebrow{color:var(--accent);font-size:.78rem;font-weight:750;letter-spacing:.17em;text-transform:uppercase}
+    h1{font-size:clamp(2.7rem,7vw,5.6rem);line-height:1.02;letter-spacing:-.055em;margin:18px 0 20px;max-width:850px}
+    .hero p{max-width:760px;color:var(--muted);font-size:clamp(1.08rem,2vw,1.3rem);margin:0}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:7px;border:1px solid var(--line);font-weight:650}.btn.primary{background:var(--accent);color:#10202a;border-color:var(--accent)}.btn.secondary{color:var(--ink)}
+    .hero-note{margin-top:56px;display:flex;gap:28px;flex-wrap:wrap;color:var(--muted);font-size:.88rem}.hero-note strong{color:var(--ink);font-weight:650}
+    section{padding:82px 0;border-top:1px solid rgba(168,184,196,.13)}.section-head{max-width:720px;margin-bottom:34px}.kicker{color:var(--accent);font-size:.75rem;font-weight:750;letter-spacing:.16em;text-transform:uppercase}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.035em;margin:10px 0 14px}.section-head p,.lead{color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:42px;align-items:start}.about-copy p{color:var(--muted);margin:0 0 16px}.focus-panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px}.focus-panel h3{margin:0 0 14px;font-size:1rem}.focus-panel ul{margin:0;padding-left:18px;color:var(--muted)}.focus-panel li{padding:5px 0}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.tag{font-size:.84rem;color:#d5e4e9;border:1px solid var(--line);background:rgba(255,255,255,.025);padding:6px 11px;border-radius:5px}
+    .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:25px;transition:transform .2s,border-color .2s}.project:hover{transform:translateY(-3px);border-color:var(--accent)}.project-no{font-size:.76rem;color:var(--accent);letter-spacing:.13em;font-weight:750}.project h3{font-size:1.18rem;line-height:1.35;margin:12px 0 10px}.project p{margin:0;color:var(--muted);font-size:.94rem}.project .meta{margin-top:18px;color:#d4e2e9;font-size:.82rem}
+    .timeline{border-left:1px solid var(--line);margin-left:7px;padding-left:27px;display:grid;gap:28px}.role{position:relative}.role:before{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--accent);left:-33px;top:8px;box-shadow:0 0 0 5px var(--bg)}.role h3{margin:0;font-size:1.12rem}.role .org{color:var(--accent2);font-weight:600}.role .date{font-size:.84rem;color:var(--muted);margin:2px 0 8px}.role p{color:var(--muted);margin:0;max-width:820px}
+    .research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.research{padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:10px}.research strong{display:block;font-size:1.08rem}.research span{color:var(--muted);font-size:.9rem}
+    .contact{background:linear-gradient(120deg,rgba(99,214,196,.09),rgba(131,174,245,.08));border:1px solid var(--line);border-radius:14px;padding:clamp(26px,5vw,48px);display:flex;justify-content:space-between;align-items:center;gap:28px}.contact p{color:var(--muted);max-width:610px;margin:0}.contact h2{margin-top:0}
+    footer{padding:28px 0;color:var(--muted);font-size:.84rem}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    @media(max-width:760px){nav{align-items:flex-start;padding:17px 0;flex-direction:column}.navlinks{gap:13px}.hero{padding:78px 0 68px}.about-grid,.project-grid{grid-template-columns:1fr}.research-grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}section{padding:64px 0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap"><nav aria-label="Main navigation">
+    <a class="brand" href="#top">DEBJIT ROY<span>.</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#contact">Contact</a>
+    </div>
+  </nav></div>
+</header>
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Optical Engineering · Advanced Microscopy · Instrumentation</div>
+      <h1>Building optical tools<br>for scientific discovery.</h1>
+      <p>I'm Debjit Roy, Ph.D. I develop, integrate, align, and troubleshoot optical systems for quantitative biological research—with over 15 years of hands-on experience spanning custom microscopy, laser systems, and precision instrumentation.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">Explore technical projects</a>
+        <a class="btn secondary" href="mailto:debjitroy2006@gmail.com">Get in touch ↗</a>
+      </div>
+      <div class="hero-note"><span><strong>15+ years</strong> hands-on optical systems</span><span><strong>Ph.D.</strong> Physical Chemistry</span><span><strong>Focus</strong> Instrument development & integration</span></div>
+    </div>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div class="kicker">01 / About</div><h2>Optics at the intersection of physics, engineering, and biology.</h2></div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>My work has centered on turning experimental needs into reliable optical capabilities. I enjoy building up optical systems, bringing together optomechanics, lasers, detectors, electronics, control, and analysis to make challenging measurements possible.</p>
+        <p>Across academic research environments, I have developed custom microscope configurations, integrated optical tweezers with advanced imaging platforms, maintained ultrafast laser systems, and supported researchers through instrument training and troubleshooting. My background combines experimental physics and chemistry with quantitative biological applications.</p>
+        <p>I am interested in optical engineering, photonics, microscopy, and scientific-instrumentation roles where practical system-building experience and cross-disciplinary problem solving can contribute to product and research development.</p>
+        <div class="skills">
+          <span class="tag">Confocal & time-resolved microscopy</span><span class="tag">STED super-resolution</span><span class="tag">Optical tweezers</span><span class="tag">Multiphoton imaging</span><span class="tag">Single-molecule fluorescence</span><span class="tag">Laser alignment</span><span class="tag">Optomechanical integration</span><span class="tag">MATLAB</span><span class="tag">ImageJ</span><span class="tag">Mathematica</span><span class="tag">Fusion 360</span>
+        </div>
+      </div>
+      <aside class="focus-panel"><h3>Technical strengths</h3><ul>
+        <li>Optical system development and integration</li><li>Alignment, optimization, and troubleshooting</li><li>Fluorescence and super-resolution microscopy</li><li>Ultrafast laser operation and diagnostics</li><li>Instrument characterization and user training</li><li>Quantitative image and single-molecule data analysis</li>
+      </ul></aside>
+    </div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head"><div class="kicker">02 / Selected technical projects</div><h2>Design, integration, and experimental problem-solving.</h2><p>Examples of optical platforms and instrumentation I have helped develop, integrate, or operate. Further technical details and project photographs can be added as the portfolio evolves.</p></div>
+    <div class="project-grid">
+      <article class="project"><div class="project-no">PROJECT 01</div><h3>Four-channel time-resolved confocal microscope</h3><p>Developed a custom time-resolved, four-channel confocal microscope for quantitative fluorescence measurements, with a configuration comparable in purpose to a commercial MicroTime 200 platform. Also supported instrument training.</p><div class="meta">Custom microscopy · Time-resolved fluorescence · System integration</div></article>
+      <article class="project"><div class="project-no">PROJECT 02</div><h3>Peltier-based microscope temperature controller</h3><p>Designed a microscope temperature-control assembly in Autodesk Fusion 360, covering a 10–68 °C operating range. Work included instrument development, maintenance, and user training.</p><div class="meta">Thermal control · CAD · Microscope instrumentation</div></article>
+      <article class="project"><div class="project-no">PROJECT 03</div><h3>Optical tweezers integrated with STED microscopy</h3><p>Worked with an Olympus IX-83 optical-tweezers setup and a commercial Abberior STED-ready system, integrating manipulation and super-resolution imaging capabilities for membrane research.</p><div class="meta">Optical trapping · STED · Instrument alignment</div></article>
+      <article class="project"><div class="project-no">PROJECT 04</div><h3>Tabletop optical tweezers with multiphoton imaging</h3><p>Built and worked with a tabletop optical-tweezers microscope incorporating multiphoton imaging, combining optical manipulation and nonlinear fluorescence microscopy.</p><div class="meta">Optical tweezers · Multiphoton microscopy · Optical design</div></article>
+      <article class="project"><div class="project-no">PROJECT 05</div><h3>Mach–Zehnder interferometer</h3><p>Developed an interferometric setup for ultrafast pulse characterization, applying precision alignment and interferometric measurement principles.</p><div class="meta">Interferometry · Ultrafast optics · Characterization</div></article>
+      <article class="project"><div class="project-no">PROJECT 06</div><h3>Femtosecond laser systems</h3><p>Hands-on alignment, maintenance, and troubleshooting experience with a Coherent MIRA 900-F oscillator pumped by a Verdi 5, and a K&amp;M Labs oscillator kit with Nd:YVO₄ / Verdi 5 pumping.</p><div class="meta">Femtosecond lasers · Laser alignment · Diagnostics</div></article>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <div class="section-head"><div class="kicker">03 / Research & engineering experience</div><h2>Instrument development grounded in demanding experiments.</h2></div>
+    <div class="timeline">
+      <article class="role"><h3>Staff Scientist</h3><div class="org">Washington University in St. Louis · Biochemistry & Molecular Biophysics</div><div class="date">March 2023 – September 2026</div><p>Investigated ApoE4 interactions with lipid vesicles and its thermodynamic properties across a broad temperature range, using fluorescence-based biophysical approaches and quantitative analysis.</p></article>
+      <article class="role"><h3>Postdoctoral Research Associate</h3><div class="org">Washington University in St. Louis · Biochemistry & Molecular Biophysics</div><div class="date">February 2020 – March 2023</div><p>Studied ApoE4 conformational heterogeneity and interactions with lipid systems, combining single-molecule fluorescence measurements with quantitative modeling and analysis.</p></article>
+      <article class="role"><h3>Postdoctoral Research Associate</h3><div class="org">Washington University in St. Louis · Cell Biology & Physiology</div><div class="date">February 2018 – January 2020</div><p>Worked on three-dimensional tracking of synaptic vesicles in live neurons to investigate vesicle recycling, including neuronal cell culture and live-cell imaging.</p></article>
+      <article class="role"><h3>Postdoctoral Researcher</h3><div class="org">Max Planck Institute of Colloids and Interfaces · Potsdam, Germany</div><div class="date">November 2015 – October 2017</div><p>Applied optical tweezers and STED microscopy to giant unilamellar vesicles, including work on lipid nanotubes, membrane bending rigidity, and spontaneous curvature. Integrated optical tweezers with a commercial STED platform.</p></article>
+      <article class="role"><h3>Ph.D. Researcher</h3><div class="org">Indian Institute of Technology Kanpur</div><div class="date">2008 – 2016</div><p>Conducted research in physical chemistry and experimental optics, focusing on two-photon fluorescence, microscopy, and optical tweezers. Thesis: <em>Control and Applications of Two Photon Fluorescence in Microscopy and Optical Tweezers.</em></p></article>
+    </div>
+  </div></section>
+
+  <section id="research"><div class="wrap">
+    <div class="section-head"><div class="kicker">04 / Research contributions</div><h2>Optical methods applied to quantitative biophysics.</h2><p>My research has used advanced optical measurements to investigate molecular organization, membrane mechanics, and biological dynamics.</p></div>
+    <div class="research-grid">
+      <div class="research"><strong>Single-molecule fluorescence</strong><span>smFRET measurements and analysis of conformational states, heterogeneity, and dynamics.</span></div>
+      <div class="research"><strong>Membrane biophysics</strong><span>Optical manipulation and super-resolution imaging of model membranes and lipid nanotubes.</span></div>
+      <div class="research"><strong>Biological imaging</strong><span>Live-cell imaging and three-dimensional tracking of synaptic vesicles in neurons.</span></div>
+    </div>
+    <p class="lead" style="margin-top:22px">Selected publications include work in <em>PNAS</em> (2023), <em>Journal of Physical Chemistry B</em> (2023), <em>Advanced Materials</em> (2021), and <em>Nano Letters</em> (2020, 2018).</p>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="contact"><div><div class="kicker">05 / Contact</div><h2>Let's build something useful.</h2><p>For opportunities in optical engineering, photonics, advanced microscopy, or scientific instrumentation, feel free to get in touch.</p></div><a class="btn primary" href="mailto:debjitroy2006@gmail.com">debjitroy2006@gmail.com ↗</a></div>
+  </div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> Debjit Roy, Ph.D.</span><span>Optical Engineering · Microscopy · Scientific Instrumentation</span></div></footer>
+</body>
+</html>
